@@ -19,6 +19,10 @@ The template now has Supabase integration with PostgreSQL, RLS policies, and RAG
 - [x] Row Level Security policies (user isolation)
 - [x] RAG pipeline with vector embeddings
 - [x] Supabase Auth integration
+- [x] Auth UI (sign in, sign up pages)
+- [x] Dashboard with lesson plans list
+- [x] Documents page with upload/search
+- [x] AI Lesson Plan Generator
 
 ## Current Structure
 
