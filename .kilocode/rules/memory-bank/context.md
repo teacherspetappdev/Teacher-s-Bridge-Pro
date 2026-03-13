@@ -1,10 +1,10 @@
-# Active Context: Next.js Starter Template
+# Active Context: Supabase Backend with RAG Pipeline
 
 ## Current State
 
-**Template Status**: ✅ Ready for development
+**Template Status**: ✅ Supabase backend configured
 
-The template is a clean Next.js 16 starter with TypeScript and Tailwind CSS 4. It's ready for AI-assisted expansion to build any type of application.
+The template now has Supabase integration with PostgreSQL, RLS policies, and RAG pipeline for document embeddings.
 
 ## Recently Completed
 
@@ -14,6 +14,11 @@ The template is a clean Next.js 16 starter with TypeScript and Tailwind CSS 4. I
 - [x] ESLint configuration
 - [x] Memory bank documentation
 - [x] Recipe system for common features
+- [x] Supabase backend setup
+- [x] Tables: profiles, curriculum_docs, lesson_plans
+- [x] Row Level Security policies (user isolation)
+- [x] RAG pipeline with vector embeddings
+- [x] Supabase Auth integration
 
 ## Current Structure
 
@@ -23,6 +28,14 @@ The template is a clean Next.js 16 starter with TypeScript and Tailwind CSS 4. I
 | `src/app/layout.tsx` | Root layout | ✅ Ready |
 | `src/app/globals.css` | Global styles | ✅ Ready |
 | `.kilocode/` | AI context & recipes | ✅ Ready |
+| `src/supabase/client.ts` | Browser client | ✅ Ready |
+| `src/supabase/server.ts` | Server client | ✅ Ready |
+| `src/supabase/admin.ts` | Admin client (RLS bypass) | ✅ Ready |
+| `src/supabase/auth.ts` | Auth utilities | ✅ Ready |
+| `src/supabase/types.ts` | TypeScript types | ✅ Ready |
+| `src/lib/rag/` | RAG pipeline | ✅ Ready |
+| `src/lib/db/` | DB operations | ✅ Ready |
+| `supabase/schema.sql` | SQL schema + RLS | ✅ Ready |
 
 ## Current Focus
 
@@ -85,3 +98,4 @@ export async function GET() {
 | Date | Changes |
 |------|---------|
 | Initial | Template created with base setup |
+| Current | Added Supabase backend with profiles, curriculum_docs, lesson_plans tables, RLS policies, and RAG pipeline |
